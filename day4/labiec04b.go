@@ -7,7 +7,7 @@ func main() {
 
 	for {
 		fmt.Scanf("%d", &x)
-		if x == 0 {
+		if x % 10 == 0 {
 			break
 		} else {
 			fmt.Printf("%d ", x)
