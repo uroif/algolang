@@ -1,13 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var x int
-
+	
 	for {
-		fmt.Scanf("%d", &x)
-		if x % 10 == 0 {
+		status, _ := fmt.Scan(&x)
+		if x%10 == 0 || status == 0 {
 			break
 		} else {
 			fmt.Printf("%d ", x)

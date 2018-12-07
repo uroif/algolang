@@ -9,7 +9,7 @@ func main() {
 
 	for i := 1; i <= b; i++ {
 		for j := 1; j <= a; j++ {
-			fmt.Printf("* ")
+			fmt.Printf("*")
 		}
 		fmt.Printf("\n")
 	}

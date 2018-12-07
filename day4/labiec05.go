@@ -7,7 +7,7 @@ func main() {
 
 	fmt.Scanf("%d", &x)
 
-	for i := 1; i < x; i++ {
+	for i := 0; i < x; i++ {
 		for j := 1; j <= 10; j++ {
 			fmt.Printf("%d ", i)
 		}

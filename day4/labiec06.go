@@ -3,14 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var n, k int 
+	var n int 
 
 	fmt.Scanf("%d", &n)
 
-	for i := 2; i < n; i++ {
-		k = n / i
-		if i * k == n {
-			fmt.Printf("%d ", i)
+	for i := 2; i < n/2; i++ {
+		if n % i == 0 && i < n/i {
+			fmt.Printf("%d %d ", i, n/i)
 		}
 	}
 }
