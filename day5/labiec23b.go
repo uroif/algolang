@@ -3,14 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	var n int
+	var ntest, x int
 
-	fmt.Scan(&n)
+	fmt.Scanf("%d\n", &ntest)
 
-	fmt.Printf("%d", findMax(n))
+	for ntest > 0 {
+		ntest--
+		
+		fmt.Scan(&x)
+		fmt.Printf("%d\n", findMaxDigit(x))
+	}
 }
 
-func findMax(n int) int {
+func findMaxDigit(n int) int {
 	var x, max int
 
 	for n != 0 {
