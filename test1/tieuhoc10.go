@@ -32,8 +32,5 @@ func isPerfectNumber(n int) bool {
 		}
 	}
 
-	if sum == n {
-		return true
-	}
-	return false
+	return sum == n
 }

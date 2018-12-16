@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	lib "../lib"
+)
 
 func main() {
 	var ntest int
@@ -9,22 +12,19 @@ func main() {
 
 	for ntest > 0 {
 		ntest--
-		var n, x int
-		fmt.Scanf("%d\n", &n)
-		var slc []int
 
-		for i := 0; i < n; i++ {
-			fmt.Scan(&x)
-			slc = append(slc, x)
-		}
+		var n int
+		fmt.Scan(&n)
+
+		slc := lib.InputSlice(n)
 
 		fmt.Println(isDayDanDau(slc))
 	}
 }
 
 func isDayDanDau(slc []int) int {
-	for i := 0; i < len(slc)-1; i++ {
-		if slc[i]*slc[i+1] >= 0 {
+	for i := 1; i < len(slc); i++ {
+		if slc[i]*slc[i-1] >= 0 {
 			return 0
 		}
 	}

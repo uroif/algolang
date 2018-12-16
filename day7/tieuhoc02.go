@@ -19,7 +19,6 @@ func main() {
 		fmt.Scan(&n)
 
 		slc := lib.InputSlice(n)
-		// lib.PrintSlice(slc)
 		fmt.Printf("%f %f", tinhTBC(slc), tinhTBN(slc))
 		fmt.Println()
 	}
