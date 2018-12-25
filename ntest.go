@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var ntest int
 
-	fmt.Scanf("%d\n", &ntest)
+	fmt.Scan(&ntest)
 
 	for ntest > 0 {
 		ntest--
