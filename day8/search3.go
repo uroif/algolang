@@ -13,14 +13,14 @@ func main() {
 	for ntest > 0 {
 		ntest--
 
-		fmt.Scanf("%d %d\n", &n, &x)
+		fmt.Scan(&n, &x)
 
 		slc := lib.InputSlice(n)
 		fmt.Println(search(slc, x))
 	}
 }
 
-func search(slc []int, x int) []int] {
+func search(slc []int, x int) []int {
 	var rsl []int
 	for i, v := range slc {
 		if v == x {
