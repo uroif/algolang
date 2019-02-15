@@ -1,2 +1,2 @@
 # algolang
-Algorithm and Data Structure with Go
+Algorithms and Data Structures with Go
